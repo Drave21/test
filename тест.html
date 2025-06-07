@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест: 10 вопросов с вариантами ответов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .question-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+
+        .options {
+            margin-left: 20px;
+        }
+
+        .option {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тест: 10 вопросов с вариантами ответов</h1>
+
+    <form id="quizForm">
+        <!-- Вопрос 1 (с картинкой) -->
+        <div class="question">
+            <h3>1. Какое животное изображено на картинке?</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg" alt="Животное" class="question-image" width="300">
+            <div class="options">
+                <div class="option"><input type="radio" name="q1" value="a"> a) Собака</div>
+                <div class="option"><input type="radio" name="q1" value="b"> b) Кошка</div>
+                <div class="option"><input type="radio" name="q1" value="c"> c) Лиса</div>
+                <div class="option"><input type="radio" name="q1" value="d"> d) Медведь</div>
+            </div>
+        </div>
+
+        <!-- Вопрос 2 -->
+        <div class="question">
+            <h3>2. Какой газ преобладает в составе атмосферы Земли?</h3>
+            <div class="options">
+                <div class="option"><input type="radio" name="q2" value="a"> a) Кислород</div>
+                <div class="option"><input type="radio" name="q2" value="b"> b) Азот</div>
+                <div class="option"><input type="radio" name="q2" value="c"> c) Углекислый газ</div>
+                <div class="option"><input type="radio" name="q2" value="d"> d) Водород</div>
+            </div>
+        </div>
+
+        <!-- Вопрос 3 (с картинкой) -->
+        <div class="question">
+            <h3>3. Какое транспортное средство изображено на картинке?</h3>
+            <img src="https://static.tildacdn.com/tild3132-3565-4761-b534-363764373263/7-ezgifcom-optijpeg.jpg" alt="Достопримечательность" class="question-image" width="300">
+            <div class="options">
+                <div class="option"><input type="radio" name="q3" value="a"> a) автомобиль</div>
+                <div class="option"><input type="radio" name="q3" value="b"> b) вертолет</div>
+                <div class="option"><input type="radio" name="q3" value="c"> c) самолет</div>
+                <div class="option"><input type="radio" name="q3" value="d"> d) корабль</div>
+            </div>
+        </div>
+
+        <!-- Вопрос 4 -->
+        <div class="question">
+            <h3>4. Какое из этих произведений написал Лев Толстой?</h3>
+            <div class="options">
+                <div class="option"><input type="radio" name="q4" value="a"> a) "Преступление и наказание"</div>
+                <div class="option"><input type="radio" name="q4" value="b"> b) "Война и мир"</div>
+                <div class="option">
+                    <input type="radio" name="q4" value="c"> c) "Мёртвые души"
+                </div>
+                <div class="option"><input type="radio" name="q4" value="d"> d) "Отцы и дети"</div>
+            </div>
+        </div>
+
+        <!-- Вопрос 5 (с картинкой) -->
+        <div class="question">
+            <h3>5. Как называется эта геометрическая фигура?</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/33/33807.png" alt="Геометрическая фигура" class="question-image" width="200">
+            <div class="options">
+                <div class="option"><input type="radio" name="q5" value="a"> a) Квадрат</div>
+                <div class="option"><input type="radio" name="q5" value="b"> b) Треугольник</div>
+                <div class="option"><input type="radio" name="q5" value="c"> c) Пятиугольник</div>
+                <div class="option"><input type="radio" name="q5" value="d"> d) Шестиугольник</div>
+            </div>
+        </div>
+
+        <!-- Вопрос 6 -->
+        <div class="question">
+            <h3>6. Какая планета Солнечной системы самая большая?</h3>
+            <div class="options">
+                <div class="option"><input type="radio" name="q6" value="a"> a) Земля</div>
+                <div class="option"><input type="radio" name="q6" value="b"> b) Сатурн</div>
+                <div class="option"><input type="radio" name="q6" value="c"> c) Юпитер</div>
+                <div class="option"><input type="radio" name="q6" value="d"> d) Марс</div>
+            </div>
+        </div>
+
+        <!-- Вопрос 7 (с картинкой) -->
+        <div class="question">
+            <h3>7. Какой стране принадлежит этот флаг?</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People's_Republic_of_China.svg/1200px-Flag_of_the_People's_Republic_of_China.svg.png" alt="Флаг страны" class="question-image" width="300">
+            <div class="options">
+                <div class="option"><input type="radio" name="q7" value="a"> a) Япония</div>
+                <div class="option"><input type="radio" name="q7" value="b"> b) Китай</div>
+                <div class="option"><input type="radio" name="q7" value="c"> c) Вьетнам</div>
+                <div class="option"><input type="radio" name="q7" value="d"> d) Южная Корея</div>
+            </div>
+        </div>
+
+        <!-- Вопрос 8 -->
+        <div class="question">
+            <h3>8. Какое из этих веществ является кислотой?</h3>
+            <div class="options">
+                <div class="option"><input type="radio" name="q8" value="a"> a) NaCl</div>
+                <div class="option"><input type="radio" name="q8" value="b"> b) H₂SO₄</div>
+                <div class="option"><input type="radio" name="q8" value="c"> c) NaOH</div>
+                <div class="option"><input type="radio" name="q8" value="d"> d) CaCO₃</div>
+            </div>
+        </div>
+
+        <!-- Вопрос 9 (с картинкой) -->
+        <div class="question">
+            <h3>9. Как называется этот музыкальный инструмент?</h3>
+            <img src="https://goronok.ru/wp-content/uploads/2019/12/contrabass-gibrid.jpg" alt="Музыкальный инструмент" class="question-image" width="200">
+            <div class="options">
+                <div class="option"><input type="radio" name="q9" value="a"> a) Скрипка</div>
+                <div class="option"><input type="radio" name="q9" value="b"> b) Альт</div>
+                <div class="option"><input type="radio" name="q9" value="c"> c) Виолончель</div>
+                <div class="option"><input type="radio" name="q9" value="d"> d) Контрабас</div>
+            </div>
+        </div>
+
+        <!-- Вопрос 10 -->
+        <div class="question">
+            <h3>10. Сколько лет Путину???</h3>
+            <div class="options">
+                <div class="option"><input type="radio" name="q10" value="a"> a) 67</div>
+                <div class="option"><input type="radio" name="q10" value="b"> b) 72</div>
+                <div class="option"><input type="radio" name="q10" value="c"> c) он бессмертен</div>
+                <div class="option"><input type="radio" name="q10" value="d"> d) 52</div>
+            </div>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Проверить ответы</button>
+    </form>
+
+    <div id="result" class="result"></div>
+
+    <script>
+        function checkAnswers() {
+            // Правильные ответы
+            const correctAnswers = {
+                q1: "b",
+                q2: "b",
+                q3: "c",
+                q4: "b",
+                q5: "c",
+                q6: "c",
+                q7: "b",
+                q8: "b",
+                q9: "c",
+                q10: "b"
+            };
+
+            let score = 0;
+            const form = document.getElementById("quizForm");
+            const resultDiv = document.getElementById("result");
+
+            // Проверка каждого вопроса
+            for (let i = 1; i <= 10; i++) {
+                const questionName = "q" + i;
+                const selectedOption = form.elements[questionName].value;
+
+                if (!selectedOption) {
+                    resultDiv.innerHTML = "Пожалуйста, ответьте на все вопросы!";
+                    return;
+                }
+
+                if (selectedOption === correctAnswers[questionName]) {
+                    score++;
+                }
+            }
+
+            // Вывод результата
+            const percentage = (score / 10) * 100;
+            let message = `Ваш результат: ${score} из 10 (${percentage}%)
+`;
+
+            if (score === 10) {
+                message += "АЙ ТИГР всё правильно!";
+            } else if (score >= 7) {
+                message += "нормааааально";
+            } else if (score >= 5) {
+                message += "ууууу....";
+            } else {
+                message += "все неправильно!";
+            }
+
+            resultDiv.innerHTML = message;
+        }
+    </script>
+</body>
+</html>
